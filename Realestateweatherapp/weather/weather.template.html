@@ -1,0 +1,50 @@
+<div class="weather-container" style="text-align: center;">
+    <br>
+    <table style="border: 1px solid #2670c5; border-collapse: collapse;">
+        <tr>
+            <td colspan="2" style="text-align: center; padding: 20px;">
+                <h1>WEATHER CONDITIONS PRESENT ACCORDING TO CHOOSEN VILLA PROPERTIES</h1>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center; padding: 10px;">
+                <label for="cityName"><strong>ENTER THE PLACE NAME </strong></label>
+                <input type="text" ng-model="$ctrl.city" placeholder="Enter the place name">
+                <button ng-click="$ctrl.getWeather()">Get Weather Details </button>
+            </td>
+        </tr>
+        <tr ng-if="$ctrl.weatherData">
+            <td colspan="2" style="text-align: center; padding: 10px;">
+                <div class="result-container" ng-if="$ctrl.weatherData" style="text-align: center;">
+                    <table style="margin: auto; ">
+                        <tr>
+                            <td>City:</td>
+                            <td>{{$ctrl.weatherData.name}}</td>
+                        </tr>
+                        <tr>
+                            <td>Temperature:</td>
+                            <td>{{$ctrl.weatherData.main.temp}} °C</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td>{{$ctrl.weatherData.wind.speed}} m/s</td>
+                        </tr>
+                        <tr>
+                            <td>Precipitation:</td>
+                            <td>{{$ctrl.weatherData.weather[0].description}}</td>
+                        </tr>
+                    </table>
+                    </td>
+                    </tr>
+
+               </div>
+
+            </td>
+        </tr>
+        <tr ng-if="$ctrl.error">
+            <td colspan="2" style="text-align: center; padding: 10px;">
+                <p>{{$ctrl.error}}</p>
+            </td>
+        </tr>
+    </table>
+</div>

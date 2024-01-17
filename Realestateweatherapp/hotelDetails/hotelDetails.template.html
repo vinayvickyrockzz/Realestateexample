@@ -1,0 +1,7 @@
+<div class="hotel-details">
+    <h2>{{ $ctrl.hotel.name }} Details</h2>
+    <img id="hotel-detail-img" ng-src="{{ $ctrl.hotel.imagePath }}">
+    <p>Address: {{ $ctrl.hotel.address }}</p>
+    <p>Price: {{ $ctrl.hotel.price | currency:"INR₹" }}</p>
+    <p>Details: {{$ctrl.hotel.details}}</p>
+</div>
