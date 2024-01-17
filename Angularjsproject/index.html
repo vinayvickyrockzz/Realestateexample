@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="realEstateApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Real Estate Company</title>
+  
+</head>
+<body>
+    <div ng-include="'container/component/header/header.html'"></div>
+    <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D">
+    
+
+  <!-- Include AngularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+
+ 
+  <script src="container/app.js"></script>
+  <script src="./container/component/about/about.component.js"></script>
+  <script src="./container/component/header/header.component.js"></script>
+  <script src="./container/component/home/home.component.js"></script>
+  <script src="./container/component/login/login.component.js"></script>
+
+  <link rel="stylesheet" href="index.css">
+  <div ng-view></div>
+  
+  
+</body>
+</html>
+

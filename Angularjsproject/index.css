@@ -1,0 +1,37 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styles for the header */
+  header {
+    background-color: #201212;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+  }
+  
+  /* Navigation links */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  img {
+width: 1540px;;
+height: 400px;
+  }
+  

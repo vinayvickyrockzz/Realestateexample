@@ -1,0 +1,13 @@
+<!-- HTML for the header -->
+<div>
+  <header ng-controller="HeaderController">
+    <nav>
+      <ul>
+        <li ng-class="{ 'active': isActive('/') }"><a href="#/">Home</a></li>
+        <li ng-class="{ 'active': isActive('/about') }"><a href="#/about">About Us</a></li>
+        <li ng-class="{ 'active': isActive('/login') }"><a href="#/login">login</a></li>
+      </ul>
+    </nav>
+   
+  </header>
+</div>

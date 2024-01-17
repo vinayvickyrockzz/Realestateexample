@@ -1,0 +1,29 @@
+<div ng-controller="MainController">
+  <br>
+    <h1>REALESTATE FEATURED PROPERTIES</h1>
+    <br> 
+    <input type="text" placeholder="Filter by Address" ng-model="filterAddress">
+     <button ng-click="filterAddress()">Search</button>
+     <hr>
+     <ul>
+      <br>
+      <li><button onclick="buttonClicked('Button 1')">Tranquil Haven Estates</button></li>
+      <br>
+      <li><button onclick="buttonClicked('Button 2')">Golden Meadows Properties</button></li>
+      <br>
+      <li><button onclick="buttonClicked('Button 3')">Majestic Heights Properties</button></li>
+     
+    
+   
+     
+    
+    <!-- Display featured properties -->
+    <div ng-repeat="property in featuredProperties | filter: filterAddress">
+
+      <h2>{{ property.name }}</h2>
+      <p>Address: {{ property.address }}</p>
+      <p>Price: {{ property.price }}</p>
+      <!-- Add more property details as needed -->
+    </div>
+  </div>
+  
